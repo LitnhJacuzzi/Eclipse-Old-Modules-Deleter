@@ -14,8 +14,7 @@ public abstract class OldModuleAnalyzer
 	final HashMap<String, ModuleInfo> detectedModules = new HashMap<>();
 	final List<File> oldModules = new IdentityArrayList<>();
 	
-	public OldModuleAnalyzer(String eclipsePath) {
-		File eclipseDir = new File(eclipsePath);
+	public OldModuleAnalyzer(File eclipseDir) {
 		this.pluginsDir = ModuleUtil.getFileByName(eclipseDir, "plugins");
 		this.featuresDir = ModuleUtil.getFileByName(eclipseDir, "features");
 	}

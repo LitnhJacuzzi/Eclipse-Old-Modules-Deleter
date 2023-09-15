@@ -12,8 +12,8 @@ import javax.xml.bind.Unmarshaller;
 
 public class OldModuleMetadataAnalyzer extends OldModuleAnalyzer 
 {
-	public OldModuleMetadataAnalyzer(String eclipsePath) {
-		super(eclipsePath);
+	public OldModuleMetadataAnalyzer(File eclipseDir) {
+		super(eclipseDir);
 	}
 
 	@Override

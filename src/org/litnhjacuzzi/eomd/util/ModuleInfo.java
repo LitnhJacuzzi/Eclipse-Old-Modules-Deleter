@@ -29,11 +29,11 @@ public class ModuleInfo
 	}
 	
 	/**
-	 * Determine whether this plugin is older than {@code anotherPlugin}.
+	 * Determine whether this module is older than {@code anotherModule}.
 	 */
-	public boolean isOlderThan(ModuleInfo anotherPlugin) {
+	public boolean isOlderThan(ModuleInfo anotherModule) {
 		DefaultArtifactVersion thisVersion = new DefaultArtifactVersion(version);
-		DefaultArtifactVersion thatVersion = new DefaultArtifactVersion(anotherPlugin.version);
+		DefaultArtifactVersion thatVersion = new DefaultArtifactVersion(anotherModule.version);
 		return thisVersion.compareTo(thatVersion) < 0;
 	}
 }

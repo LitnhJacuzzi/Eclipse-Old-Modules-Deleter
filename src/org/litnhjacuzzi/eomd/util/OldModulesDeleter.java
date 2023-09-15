@@ -25,13 +25,13 @@ public class OldModulesDeleter
 		List<File> oldModules = null;
 		switch(detectType) {
 			case METADATA:
-				oldModules = new OldModuleMetadataAnalyzer(eclipsePath).getOldModules();
+				oldModules = new OldModuleMetadataAnalyzer(eclipseDir).getOldModules();
 				break;
 			case DIR_NAME:
 				JOptionPane.showMessageDialog(deleterDialog, 
 						"Not support yet.", "Error", JOptionPane.ERROR_MESSAGE);
 				return;
-//				oldModules = new OldModuleDirNameAnalyzer(eclipsePath).getOldModules();
+//				oldModules = new OldModuleDirNameAnalyzer(eclipseDir).getOldModules();
 //				break;
 		}
 		

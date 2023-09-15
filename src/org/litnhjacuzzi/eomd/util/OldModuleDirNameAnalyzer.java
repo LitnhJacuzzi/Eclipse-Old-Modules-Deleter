@@ -4,8 +4,8 @@ import java.io.File;
 
 public class OldModuleDirNameAnalyzer extends OldModuleAnalyzer
 {
-	public OldModuleDirNameAnalyzer(String eclipsePath) {
-		super(eclipsePath);
+	public OldModuleDirNameAnalyzer(File eclipseDir) {
+		super(eclipseDir);
 	}
 
 	@Override
